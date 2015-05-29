@@ -1,3 +1,8 @@
-extends _layout
+extends index
 
-block content
+block test-content
+  script(src="should.min.js")
+  script(src="mocha.js")
+  script(src="chai.js")
+  script mocha.setup('bdd');
+  script(src="tests.js")

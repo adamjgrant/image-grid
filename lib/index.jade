@@ -1,4 +1,16 @@
 extends _layout
 
 block content
-  h1 Hey there
+  nav
+    h1 Image Grid
+
+  main#render
+    .row
+      figure#imageBox
+        img(src="loading.gif")
+
+      aside#lightbox
+
+  block test-content
+
+  script(src="script.js")
