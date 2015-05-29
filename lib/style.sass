@@ -1,2 +1,32 @@
-body
-  display: inherit
+@import url(//fonts.googleapis.com/css?family=Lato)
+@import ../node_modules/normalize-sass/normalize.sass
+
+*
+  font-family: 'Lato', sans-serif
+  box-sizing: border-box
+
+html
+  font-size: 16px
+
+// NAVBAR
+
+$navbarHeight: 45px
+
+nav
+  height: $navbarHeight
+  background: whitesmoke
+  padding: 0 15px
+
+  h1
+    font-size: 0.85rem
+    margin: 0
+    line-height: $navbarHeight
+
+// Thumbnails
+
+figure
+  margin: 5px
+  padding: 5px
+  border: 1px solid lightgray
+  display: block
+  max-width: 100%

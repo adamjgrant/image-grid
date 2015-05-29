@@ -36,7 +36,7 @@ gulp.task('sync', function() {
 
 gulp.task('uncompiled', function() {
   return gulp.src([
-    './lib/img/*',
+    './lib/*.gif',
     './node_modules/mocha/mocha.js',
     './node_modules/should/should.min.js',
     './node_modules/chai/chai.js'

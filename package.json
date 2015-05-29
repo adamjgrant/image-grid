@@ -26,6 +26,7 @@
     "gulp-ruby-sass": "^1.0.5",
     "gulp-uglify": "^1.2.0",
     "mocha": "^2.2.5",
+    "normalize-sass": "^1.0.0",
     "should": "^6.0.3"
   }
 }
