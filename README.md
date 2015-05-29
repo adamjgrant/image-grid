@@ -1,8 +1,21 @@
 # Image Grid
 
-## Compiling
+## Running
+
+Install bundler and bundle
+
+    gem install bundler
+    bundle
+
+Install node dependencies
+
+    npm install .
+
+Afterwards, run `gulp` to build and watch.
 
 ## Running tests
+
+Run `gulp test`
 
 ## How this works
 
