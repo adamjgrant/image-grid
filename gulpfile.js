@@ -22,7 +22,7 @@ gulp.task('js', function() {
   return gulp.src([
       './lib/**/*.js'
     ])
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('dist'));
 })
 

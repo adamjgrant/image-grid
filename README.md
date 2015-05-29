@@ -1,5 +1,7 @@
 # Image Grid
 
+Grid of images loaded from Flickr. jQuery free and built from Jade and Sass.
+
 ## Running
 
 Install bundler and bundle
@@ -23,7 +25,8 @@ Run `gulp test`
 
 1. CSS and markup load showing a title bar, an image box template, and a
    lightbox.
-2. The markup of the image box is saved as a JS variable for use in prototypes.
+2. The markup of the image box and slideshow are saved as JS variables for use
+   in prototypes.
 3. Images are pulled from API. ImageBox superclass created that turns API image
    source into markup. This superclass contains a local variable of the parent
    element it will append to.
