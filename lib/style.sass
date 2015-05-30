@@ -91,6 +91,13 @@ nav
   background: white
   box-shadow: 0px 0px 0px 999px rgba(0, 0, 0, 0.5)
 
+  figure
+    margin: 0
+    display: none
+
+    &.show
+      display: block
+
   &.show
     pointer-events: auto
     opacity: 1
@@ -106,6 +113,10 @@ nav
     width: 400px
     left: 50%
     margin-left: -200px
+
+  @media screen and (min-width: 700px)
+    width: 600px
+    margin-left: -300px
 
   button
     background: transparent
