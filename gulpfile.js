@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task('jade', function() {
   return gulp.src(['./lib/**/[^_]*.jade'])
-    .pipe(jade())
+    .pipe(jade({ pretty: '  ' }))
     .pipe(gulp.dest('dist'));
 })
 
@@ -38,6 +38,7 @@ gulp.task('uncompiled', function() {
   return gulp.src([
     './lib/*.gif',
     './node_modules/mocha/mocha.js',
+    './node_modules/mocha/mocha.css',
     './node_modules/should/should.min.js',
     './node_modules/chai/chai.js'
   ])
@@ -57,7 +58,7 @@ gulp.task('build', [
   'sass',
   'js',
   'uncompiled'
-], function() {});
+]);
 
 gulp.task('test', ['build'], function() {
   return gulp.src('./dist/test.html')

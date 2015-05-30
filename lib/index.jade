@@ -4,13 +4,15 @@ block content
   nav
     h1 Image Grid
 
-  main#render
-    .row#thumbnails
+  main#render-thumbnails
+    .row
       figure#imageBox
         img(src="loading.gif")
 
-      aside#lightbox
-        #stage
+  aside.lightbox
+    div#render-lightbox
+    button#previous
+    button#next
 
   block test-content
 
