@@ -1,12 +1,20 @@
 @import url(//fonts.googleapis.com/css?family=Lato)
 @import ../node_modules/normalize-sass/normalize.sass
 
+// Basic Grid
+$gutter: 15px
+
 *
   font-family: 'Lato', sans-serif
   box-sizing: border-box
 
 html
   font-size: 16px
+
+img
+  max-width: 100%
+  display: block
+  cursor: pointer
 
 // NAVBAR
 
@@ -30,3 +38,40 @@ figure
   border: 1px solid lightgray
   display: block
   max-width: 100%
+
+.thumbnails
+  @media screen and (min-width: 320px)
+    .row
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      -webkit-box-align: start
+      -webkit-align-items: flex-start
+      -ms-flex-align: start
+      align-items: flex-start
+      margin: 0px auto
+      max-width: 400px
+
+      figure
+        margin: $gutter
+        width: calc(50% - #{$gutter*2})
+        overflow: hidden
+
+  @media screen and (min-width: 500px)
+    .row
+      max-width: 600px
+
+  @media screen and (min-width: 768px)
+    .row
+      max-width: 900px
+
+      figure
+        width: calc(33.333% - #{$gutter*2})
+
+// Lightbox
+.lightbox
+  display: none

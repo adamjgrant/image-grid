@@ -3,8 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     sync = require('browser-sync'),
     uglify = require('gulp-uglify'),
-    minify = require('gulp-minify-css'),
-    test = require('gulp-mocha-phantomjs');
+    minify = require('gulp-minify-css')
 
 gulp.task('jade', function() {
   return gulp.src(['./lib/**/[^_]*.jade'])
@@ -59,8 +58,3 @@ gulp.task('build', [
   'js',
   'uncompiled'
 ]);
-
-gulp.task('test', ['build'], function() {
-  return gulp.src('./dist/test.html')
-    .pipe(test());
-});
