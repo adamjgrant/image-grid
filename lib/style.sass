@@ -42,7 +42,7 @@ nav
     display: block
     max-width: 100%
 
-  @media screen and (min-width: 320px)
+  @media screen and (min-width: 360px)
     .row
       display: -webkit-box
       display: -webkit-flex
@@ -56,7 +56,7 @@ nav
       -ms-flex-align: start
       align-items: flex-start
       margin: 0px auto
-      max-width: 400px
+      max-width: 450px
 
       figure
         margin: $gutter
@@ -95,6 +95,10 @@ nav
     pointer-events: auto
     opacity: 1
 
+  &:hover
+    .previous, .next
+      opacity: 0.5
+
   @media screen and (min-width: 500px)
     height: 400px
     max-height: 100vh
@@ -119,4 +123,37 @@ nav
     right: 5px
     font-size: 2.5rem
     line-height: 1.3rem
-    color: gray
+    color: lightgray
+    padding: 0
+
+    &:hover
+      color: darkgray
+
+    &:focus
+      outline: 0px
+      color: black
+
+  .previous, .next
+    transition: opacity 0.2s
+    width: 20%
+    position: absolute
+    z-index: 2
+    top: $heading--height
+    bottom: 0
+    opacity: 0
+    padding: 0
+    background: rgba(0, 0, 0, 0.25)
+
+    &:before
+      content: "«"
+      color: white
+      font-size: 3rem
+
+    &:hover
+      opacity: 1
+
+  .next
+    right: 0
+
+    &:before
+      content: "»"
