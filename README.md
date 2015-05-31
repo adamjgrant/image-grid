@@ -15,10 +15,6 @@ Install node dependencies
 
 Afterwards, run `gulp` to build and watch.
 
-## Running tests
-
-Run `gulp test`
-
 ## How this works
 
 ### Creating the page
